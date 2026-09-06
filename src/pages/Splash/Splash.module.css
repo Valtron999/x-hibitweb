@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #030303;
+}
+
+.logo {
+  width: 98.91px;
+  height: 28.08px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: #fefefe;
+  font-weight: bold;
+}

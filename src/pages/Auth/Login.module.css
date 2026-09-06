@@ -1,0 +1,159 @@
+.page {
+  min-height: 100vh;
+  background-color: #030303;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.backIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.headerTitle {
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.headerSpacer {
+  width: 20px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #fefefe;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.label:first-child {
+  margin-top: 0;
+}
+
+.hint {
+  color: #9c9996;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.input {
+  margin-top: 10px;
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 0 15px;
+  color: #fefefe;
+  height: 50px;
+  border: 2px solid #d4d2d3;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #9c9996;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ed3237;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper .input {
+  height: 60px;
+}
+
+.eyeButton {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+}
+
+.eyeIcon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.error {
+  color: #ed3237;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.linksRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+}
+
+.mutedLink {
+  color: #919191;
+}
+
+.submitButton {
+  height: 62px;
+  background-color: #ed3237;
+  border: none;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+}

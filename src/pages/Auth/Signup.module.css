@@ -1,0 +1,364 @@
+.page {
+  min-height: 100vh;
+  background-color: #030303;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 10px;
+  margin: -10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.backIcon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.skipButton {
+  background: none;
+  border: none;
+  color: #9c9996;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.skipCenterButton {
+  background: none;
+  border: none;
+  color: #9c9996;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.progressTrack {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2a3444;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 2px;
+  background-color: #fefefe;
+  transition: width 250ms ease;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.stepContent {
+  margin-top: 40px;
+  transition: opacity 120ms ease;
+}
+
+.title {
+  color: #fefefe;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.input {
+  margin-top: 24px;
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 0 15px;
+  color: #fefefe;
+  height: 54px;
+  border: 2px solid #d4d2d3;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #9c9996;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ed3237;
+}
+
+.inputPassword {
+  margin-top: 24px;
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 0 15px;
+  color: #fefefe;
+  height: 60px;
+  border: 2px solid #d4d2d3;
+  font-size: 16px;
+  width: 100%;
+}
+
+.inputPassword::placeholder {
+  color: #9c9996;
+}
+
+.inputPassword:focus {
+  outline: none;
+  border-color: #ed3237;
+}
+
+.eyeButton {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+}
+
+.eyeImage {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.passwordBarContainer {
+  height: 10px;
+  width: 100%;
+  background-color: #45463e;
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.passwordBar {
+  height: 100%;
+  transition: width 300ms ease, background-color 300ms ease;
+}
+
+.helperText {
+  color: #919191;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.dobWrap {
+  margin-top: 40px;
+}
+
+.dobRow {
+  display: flex;
+  gap: 12px;
+}
+
+.dobSelect {
+  flex: 1;
+  height: 54px;
+  border-radius: 17px;
+  border: 2px solid #d4d2d3;
+  background-color: transparent;
+  color: #fefefe;
+  font-size: 16px;
+  padding: 0 12px;
+}
+
+.dobSelect option {
+  background-color: #1a1a1a;
+  color: #fefefe;
+}
+
+.ageText {
+  color: #fefefe;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.genderContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.genderOption {
+  height: 60px;
+  border-radius: 17px;
+  border: 2px solid #d4d2d3;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.categoryOption {
+  width: calc(50% - 5px);
+  height: 60px;
+  border-radius: 17px;
+  border: 2px solid #d4d2d3;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.optionSelected {
+  border-color: #66bc50;
+  background-color: #66bc50;
+}
+
+.optionText {
+  color: #d4d2d3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.optionTextSelected {
+  color: #030303;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.avatarWrap {
+  position: relative;
+  width: 160px;
+  margin: 60px auto 0;
+}
+
+.avatarCircle {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  background-color: #3a4250;
+  border: 2px solid #5b6472;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarPlaceholderIcon {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  filter: brightness(0) invert(1);
+}
+
+.avatarAddBadge {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fefefe;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #030303;
+  cursor: pointer;
+}
+
+.termsContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1.5px solid #919191;
+  margin-right: 10px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.checkboxChecked {
+  background-color: #66bc50;
+  border-color: #66bc50;
+}
+
+.termsText {
+  color: #919191;
+  font-size: 14px;
+  flex: 1;
+  line-height: 20px;
+}
+
+.error {
+  color: #ed3237;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.continueButton {
+  height: 62px;
+  background-color: #fefefe;
+  border: none;
+  border-radius: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  color: #030303;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.continueButton:disabled {
+  cursor: not-allowed;
+}
