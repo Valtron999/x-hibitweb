@@ -1,0 +1,14 @@
+.avatar {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.fallback {
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #eee;
+  font-weight: 700;
+}

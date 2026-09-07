@@ -1,0 +1,270 @@
+.screen {
+  min-height: 100vh;
+  background-color: #030303;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #a6a1a5;
+}
+
+.logo {
+  width: 106.16px;
+  height: 30.14px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerIconButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.headerIcon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+}
+
+.avatarButton {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.centerBox {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.errorText {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.retryButton {
+  background: none;
+  border: none;
+  color: #d4d2d3;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.emptyBox {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.emptyText {
+  color: #686666;
+}
+
+/* ── Masonry grid ─────────────────────────────────────────────────────── */
+
+.masonryContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 6px;
+}
+
+.masonryColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Skeleton loading ─────────────────────────────────────────────────── */
+
+.skeletonGrid {
+  padding: 0 6px;
+}
+
+.skeletonRow {
+  display: flex;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.skeletonBlock {
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  margin: 6px;
+  flex: 1;
+  animation: pulse 1200ms ease-in-out infinite;
+}
+
+/* ── Floating add-post button ────────────────────────────────────────── */
+
+.fab {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #000;
+  border: 2px solid #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.fabIconText {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+/* ── Search modal ─────────────────────────────────────────────────────── */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.searchModal {
+  position: fixed;
+  inset: 0;
+  background-color: #030303;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 250ms ease;
+}
+
+.searchModalClosing {
+  animation: slideUp 200ms ease reverse;
+}
+
+.searchHeader {
+  padding: 20px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.searchInput {
+  width: 100%;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchResults {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px 20px;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.userRowText {
+  margin-left: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.userName {
+  color: #eee;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userHandle {
+  color: #888;
+  font-size: 13px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postResultRow {
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: center;
+}

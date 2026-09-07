@@ -1,0 +1,115 @@
+.wrapper {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  padding: 0 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 0 4px;
+}
+
+.title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.loadingRow {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.scrollRow {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 0 4px 4px;
+  scrollbar-width: none;
+}
+
+.scrollRow::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 170px;
+  flex-shrink: 0;
+  background-color: #151515;
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dismissBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.avatarButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: #222;
+  object-fit: cover;
+  display: block;
+}
+
+.name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subtitle {
+  color: #999;
+  font-size: 12px;
+  margin: 2px 0 14px;
+}
+
+.followBtn {
+  background-color: #ed3237;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 38px;
+}
+
+.followingBtn {
+  background-color: #333;
+}
